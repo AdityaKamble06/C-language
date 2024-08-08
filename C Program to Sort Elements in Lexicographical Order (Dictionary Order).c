@@ -38,15 +38,14 @@ int main()
 }
 
 //output
-Enter 5 words: hshhs
+Enter 5 words:
 john
 aakash
 javed
-mpohan
+mohan
 
 In the lexicographical order: 
 aakash
-hshhs
 javed
 john
-mpohan
+mohan
