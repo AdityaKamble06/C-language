@@ -1,0 +1,94 @@
+******************************Loop Control Instruction**************************
+Why loops?
+Sometimes we want our programs to execute a few sets of instructions over and over again, for eg. Printing 1 to 100, first 100 even numbers, etc.
+
+Hence loops make it easy for a programmer to tell the computer that a given set of instructions must be executed repeatedly.
+
+Types of Loops: Primarily, there are three types of loop in c language:
+
+1.While loop
+
+2.do-while loop
+
+3.for loop
+
+We will look into this one by one
+
+***While Loop***
+While(condition is true) 
+{
+// Code                                         // The block keeps executing as long as the condition is true
+// Code
+}
+
+An example:
+int i=0;
+while (i<10)
+{
+printf(“The value of i is %d”,i); i++;
+}
+
+***Note:***
+
+If the condition never becomes false, the while loop keeps getting executed. Such a loop is known as an infinite loop.
+
+Quick Quiz: Write a program to print natural numbers from 10 to 20 when the initial loop counter i is initialized to 0.
+
+The loop counter need not be int, it can be a float as well.
+
+***Increment and decrement operators***
+i++  (i is increased by 1)
+
+i--  (i is decreased by 1)
+
+printf(“—i=%d”,--i);
+
+This first decrements i and then prints it
+
+printf(“i--=%d”,i--);
+
+/*This first prints i and then decrements it
+
+>>> +++ operators does not exists => Important
+>>> += is compound assignment operator just like -=, *=, /= & %= =>Also important
+
+***Do-while loop:***
+The syntax of do-while loop looks like this:
+do 
+{
+//code;
+//code;
+}while(condition)
+
+Do-while loop works very similar to while loop
+While -> checks the condition & then executes the code
+Do-while -> executes the code & then checks the condition
+**do-while loop = while loop which executes at least once
+
+***For Loop***
+The syntax of for loop looks like this:
+
+for( initialize; test; increment or decrement)
+{
+//code;
+//code;
+}
+
+Initialize -> setting a lop counter to an initial value
+Test -> checking a condition
+Increment -> updating the loop counter
+
+An example:
+     for(i=0;i<3;i++)
+    {
+        printf(“%d”,i);
+        printf(“\n”);
+    }
+
+Output:
+0
+1
+2
+
+Quick Quiz: Write a program to print first n natural numbers using for loop.
+
